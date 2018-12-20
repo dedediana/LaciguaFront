@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+		<style>
+			.form-rounded {
+				border-radius: 1rem;
+			}
+
+			.mtp{
+				padding: 10px;
+				margin: 10px;
+            }
+            
+            .pb-7{
+                padding-bottom: 80px;
+            }
+
+            .pt-7{
+                padding-top: 115px;
+            }
+
+            .topborder{
+				border-top: 3px solid #ddd;
+			}
+
+			.fix{
+				margin: 0px !important; padding: 0px !important;
+			}
+
+			.btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
+			.btn-labeled {padding-top: 0;padding-bottom: 0;}
+			.btn { margin-bottom:10px; }
+
+			[data-toggle="collapse"] .fa:before {  
+			content: "\f139";
+			}
+
+			[data-toggle="collapse"].collapsed .fa:before {
+			content: "\f13a";
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header bg-light">
+				<!-- <div class="d-flex justify-content-center">
+					<h3> LACIGUA </h3>
+				</div> -->
+			<div class="row text-center">
+			    <div class="col-sm">
+			      <input class="mtp" type="text" placeholder="search" style="border: none;background: none;border-bottom: 2px solid #ddd;">
+			    </div>
+			    <div class="col-sm">
+			      <a href="#"><span class="font-weight-bold"> Main </span></a>
+			    </div>
+			    <div class="col-sm">
+			      <h2> LACIGUA </h2>
+				</div>
+				<div class="col-sm">
+			      Woman
+				</div>
+				<div class="col-sm">
+			      Icon menu
+				</div>
+			</div>
+		</div>
+
+		<div class="container-pluid">
+			<div class="container">
+                    <div class="card w-100 my-5">
+                        <div class="card-header">
+                            <h5> SEGERA SELESAIKAN PEMBAYARAN ANDA </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row justify-content-center my-4">
+                                <div class="col-md-5 border rounded">
+                                    <h6 class="text-center my-4"> SISA WAKTU PEMBAYARAN ANDA </h6>
+                                    <div class=" row justify-content-center my-3">
+                                        <span id="">
+                                            <h1> 23 : </h1>
+                                            <label class="float-left"> Jam </label>
+                                        </span>
+                                        <span id="">
+                                            <h1> 59 : </h1>
+                                            <label class="float-left"> Menit </label>
+                                        </span>
+                                        <span id="">
+                                            <h1> 59  </h1>
+                                            <label class="float-left"> Detik </label>
+                                        </span>
+
+                                        <p> ( Sebelum selesai 11 Desember 2018 Pukul 12:25 ) </p>
+                                    </div>
+                                </div>
+                            </div>
+							<!--/.row-->
+							
+                            <div class="row justify-content-center my-4">
+                                <div class="col-md-5 topborder fix">
+									<h6 class="w-75 my-4"> TRANSFER PEMBAYARAN KE NOMOR VIRTUAL ACCOUNT : </h6>
+									<div class="d-flex justify-content-between">
+										<span id=""> PermataBank </span>
+										<span id="" class="font-weight-bold"> 781020200015423 </span>
+									</div>
+                                </div>
+							</div>
+							
+							<div class="row justify-content-center my-4">
+                                <div class="col-md-5 topborder fix">
+									<h6 class="w-75 my-4"> JUMLAH YANG HARUS DIBAYAR : </h6>
+									<div class="d-flex justify-content-between">
+										<span id=""> TotalTagihan </span>
+										<span id="" class="font-weight-bold"> Rp 75.000 </span>
+									</div>
+                                </div>
+							</div>
+							
+							<div class="row justify-content-center my-4">
+                                <div class="col-md-5 topborder fix">
+									<h6 class="w-75 my-4"> PANDUAN PEMBAYARAN : </h6>
+									
+									<div id="accordion">
+										<div class="card">
+										  <div class="card-header">
+											<a class="card-link text-dark font-weight-bold" data-toggle="collapse" href="#collapseOne">
+											  ATM
+											  <i class="fa float-right" aria-hidden="true"></i>
+											</a>
+										  </div>
+										  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+											<div class="card-body">
+											  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											</div>
+										  </div>
+										</div>
+
+										<div class="card">
+										  <div class="card-header">
+											<a class="collapsed card-link text-dark font-weight-bold" data-toggle="collapse" href="#collapseTwo">
+											Mobile Banking
+											<i class="fa float-right" aria-hidden="true"></i>
+										  </a>
+										  </div>
+										  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+											<div class="card-body">
+											  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											</div>
+										  </div>
+										</div>
+
+										<div class="card">
+										  <div class="card-header">
+											<a class="collapsed card-link text-dark font-weight-bold" data-toggle="collapse" href="#collapseThree">
+											  Internet Banking
+											  <i class="fa float-right" aria-hidden="true"></i>
+											</a>
+										  </div>
+										  <div id="collapseThree" class="collapse" data-parent="#accordion">
+											<div class="card-body">
+											  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											</div>
+										  </div>
+										</div>
+										
+									  </div>
+									  <!--/.acordion-->
+                                </div>
+                            </div>
+                            <!--/.row-->
+                        </div>
+                    </div>
+            </div>
+		</div>
+
+		<footer class="footer bg-light">
+				<div class="container topborder">
+					<div class="row">
+							<div class="col-sm-3 mt-3">
+								<h2 style="margin-top: 0px !important;"> LACIGUA </h2>
+								<p class="text-left">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mauris ante, sodales non rhoncus eu, porta non sapien. Aliquam erat volutpat. Donec arcu mauris, volutpat aliquet laoreet vel, tristique at dui. Sed suscipit, est ac efficitur lacinia, lorem ex efficitur tellus, in dictum libero leo id quam.
+								</p>
+							</div>
+							<div class="col-sm-2 mt-3">
+								<label class="font-weight-bold"> SERVICE </label>
+								<p class="text-left">
+									Privacy & Cookies Term & Condition How To Shop Delivery Returns Product Index Trasnfer Confirmation
+								</p>
+							</div>
+							<div class="col-sm-4 mt-3">
+								<div class="form-group">
+									<label class="font-weight-bold"> SUBSCRAE & GET EDR SOO SHOPPING VOUCHER </label>
+									<input type="email" class="form-control form-rounded my-4" id="" placeholder="Enter your email address">
+							</div>
+							<div class="form-group text-left">
+								<button class="btn btn-dark form-rounded" style="width: 84px;"> Main </button>
+								<button class="btn btn-dark form-rounded" style="width: 84px;"> Woman </button>
+							</div>
+						
+						</div>
+						<div class="col-sm-3 mt-3">
+							<div class="form-group">
+								<label class="font-weight-bold"> PAYMENT PARTNER </label>
+								</div>
+	
+								<div class="form-group">
+										<label class="font-weight-bold"> DELIVERY PARTNER </label>
+								</div>
+						</div>
+					</div>
+					<!--/.row-->
+				</div>
+			</footer>
+	</body>
+</html>
+
+<script>
+$('.panel-collapse').on('show.bs.collapse', function () {
+    $(this).siblings('.panel-heading').addClass('active');
+  });
+
+  $('.panel-collapse').on('hide.bs.collapse', function () {
+    $(this).siblings('.panel-heading').removeClass('active');
+});
+
+</script>
