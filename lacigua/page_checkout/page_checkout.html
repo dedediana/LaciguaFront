@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 			.form-rounded {
@@ -64,20 +66,22 @@
                             </div>
                             <div class="card-body">
                                 <p> </p>
-                                <a href="#" class="btn btn-primary float-right"><i class="fa fa-plus"></i> Tambah Alamat Baru</a>
+                                <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#modalAlamat">
+                                    <i class="fa fa-plus"></i> Tambah Alamat Baru
+                                </button>
                             </div>
                         </div>
 
                         <div class="card mt-3">
                             <div class="card-header font-weight-bold">
                                 RINCIAN PESANAN
+                                <span id="" class="float-right"> ( 1 Barang )</span>
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <span class="font-weight-bold my-4"> LOGO T - Shirt - Putih </span><br>
                                         <label class="my-4"> LOGO JEANS </label>
-
                                         <div class="">
                                             <img src="http://placehold.it/120x160" class="rounded float-left" alt="...">
                                             <ul>
@@ -135,9 +139,8 @@
                                 </li>
                             </ul>
                         </div>
-
-                            <label class="font-weight-bold my-3"> GUNAKAN VOUCHERMU </label>
-                            <a href="#" class="btn btn-dark btn-block form-rounded">BAYAR</a>
+                        <label class="font-weight-bold my-3"> GUNAKAN VOUCHERMU </label>
+                        <a href="#" class="btn btn-dark btn-block form-rounded">BAYAR</a>
                     </div>
 
                 </div>
@@ -183,6 +186,65 @@
 					</div>
 					<!--/.row-->
 				</div>
-			</footer>
+            </footer>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="modalAlamat"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">TAMBAH ALAMAT BARU</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputAddress">LABEL ALAMAT</label>
+                                <input type="text" class="form-control" id="" placeholder="Tulis Nama Alamat">
+                                <small class="text-muted"> Contoh : Alamat Rumah, Alamat Kantor, Apartement, Dorship. </small>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">NAMA PENERIMA</label>
+                                <input type="email" class="form-control" id="" placeholder="">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">NOMOR HP</label>
+                                <input type="password" class="form-control" id="" placeholder="">
+                                <small class="text-muted"> Angka [0-9], Contoh 081234567890 </small>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-8">
+                                <label for="inputCity">KOTA / KECAMATAN </label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label for="inputZip">KODE POS</label>
+                                <input type="text" class="form-control" id="inputZip">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">ALAMAT</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Isi dengan jalan, nomor rumah, nomor kompleks, nama gedung, lantai, atau nomor unit."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                    <label class="custom-control-label" for="customControlInline">Jadikan Alamat Utama</label>
+                                </div>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">BATAL</button>
+                    <button type="button" class="btn btn-dark">TAMBAH & GUNAKAN</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- /. Modal SS-->
 	</body>
 </html>
